@@ -1,2 +1,2 @@
 # ECE357-Operating-System
-Cooper Union Coursework
+Coursework at The Cooper Union for the Advancement of Science and Art .
