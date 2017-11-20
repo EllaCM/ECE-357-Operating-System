@@ -92,7 +92,7 @@ int main(int argc, char **argv) {
 		}
 	}
 	if (fclose (fp)) {
-		  fprintf(stderr, "Error: Can't open input file %s:%s\n",argv[1],strerror(errno));
+		  fprintf(stderr, "Error: Can't close input file %s:%s\n",argv[1],strerror(errno));
 		  exit(-1);
 	}
 	fflush(stdout);
