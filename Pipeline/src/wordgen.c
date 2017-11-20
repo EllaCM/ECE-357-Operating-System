@@ -32,7 +32,6 @@ int main(int argc, char **argv) {
 	srand(time(NULL));
     const char *nptr = argv[1];
 	long int count;
-
 	if(argc>2){
 		fprintf(stderr,"Too much arguments Provided, Only one optional argument needed\n");
 		exit(-1);

@@ -54,10 +54,10 @@ void signalhandler(){
 	exit(13);
 }
 int main(int argc, char **argv) {
-	long int accepted=0,rejected=0;
+    long int accepted=0,rejected=0;
     ssize_t nread;
     size_t len = 0;
-	FILE *fp;
+    FILE *fp;
     char *line = NULL;
     signal(SIGPIPE,signalhandler);
 	char** hashArray = (char **)calloc(SIZE,sizeof(char*));
