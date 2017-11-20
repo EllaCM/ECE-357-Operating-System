@@ -10,14 +10,15 @@
 #include <errno.h>
 #include <ctype.h>
 #define SIZE 1000000
+long int matched;
 int hashCode(char *str) {
-	    int hash = 0;
-	    for (int i = 0; i < strlen(str); i++) {
-	    		if(hash>2147483647/32) return hash%SIZE; /* PLease Do not segfault*/
-	        hash = 31 * hash + str[i];
-	    }
-	    return hash % SIZE;
-	}  /*hashcode*/
+    int hash = 0;
+    for (int i = 0; i < strlen(str); i++) {
+	if(hash>2147483647/32) return hash%SIZE; /* PLease Do not segfault*/
+	hash = 31 * hash + str[i];
+    }
+    return hash % SIZE;
+}  /*hashcode*/
 char* search(char* key,char** hashArray) {
    int hashIndex = hashCode(key);
    while(hashArray[hashIndex] != NULL) {
@@ -47,19 +48,17 @@ void display(char** hashArray) {
    printf("\n");
 }
 
-long int matched;
-
 void signalhandler(){
 	fprintf(stderr, "Mateched:%ld Words\n",matched);
 	exit(13);
 }
 int main(int argc, char **argv) {
-    long int accepted=0,rejected=0;
-    ssize_t nread;
-    size_t len = 0;
-    FILE *fp;
-    char *line = NULL;
-    signal(SIGPIPE,signalhandler);
+	long int accepted=0,rejected=0;
+	ssize_t nread;
+	size_t len = 0;
+	FILE *fp;
+	char *line = NULL;
+	signal(SIGPIPE,signalhandler);
 	char** hashArray = (char **)calloc(SIZE,sizeof(char*));
 	if(hashArray==NULL){
 		fprintf(stderr, "Error: Can't allocate memory for hashArray :%s\n",strerror(errno));
