@@ -38,6 +38,7 @@ int main(int argc, char **argv){
     int pipefd2[2];
     int waitStatus;
 	pid_t child;
+    pid_t child;
 	pid_t grandchild;
 	pid_t greatgrandchild;
 	if (argc >2) {
@@ -117,7 +118,7 @@ int main(int argc, char **argv){
 						exit(EXIT_FAILURE);
 			}else{
 				/*close all the file discripters in Mother*/
-				CLOSE(pipefd1[0]);
+                CLOSE(pipefd1[0]);
 				CLOSE(pipefd1[1]);
 				CLOSE(pipefd2[0]);
 				CLOSE(pipefd2[1]);
