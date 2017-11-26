@@ -37,7 +37,6 @@ int main(int argc, char **argv){
     int pipefd1[2];
     int pipefd2[2];
     int waitStatus;
-	pid_t child;
     pid_t child;
 	pid_t grandchild;
 	pid_t greatgrandchild;
