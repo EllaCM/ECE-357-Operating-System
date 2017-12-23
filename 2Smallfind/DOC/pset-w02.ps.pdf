@@ -1,0 +1,1177 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 6478
+>>
+stream
+BT
+/TT2 1 Tf
+10 0 0 10 69.336 744 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(ECE357:Computer Operating Systems)-4155(PS 2/pg 1)-11978(©2017 Jef)25(f)-250(Hakner)]TJ
+/TT4 1 Tf
+11 0 0 11 213.27 695 Tm
+[(Pr)20(ob)10(lem 1 -- Filesystem sca)15(veng )]TJ
+15.4712 0 TD
+[(er)-278(hunt)]TJ
+/TT2 1 Tf
+-29.5866 -1.7273 TD
+[(Y)110(o)0(u)-250.1(will write a program which will be gi)25(v)15(e)0(n)-250.1(the name of an e)15(xisting re)15(gular )]TJ
+/TT5 1 Tf
+31.062 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5561 0 TD
+(le \(which is assumed to be readable by)Tj
+-31.6182 -1.1818 TD
+0.0203 Tw
+[(the in)40(v)20(oking user\), and a starting point pathname in the )]TJ
+/TT5 1 Tf
+22.4987 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0203 Tw
+[(lesystem \(which is assumed to be a directory name\).)-520.4(It will)]TJ
+-23.0548 -1.1818 TD
+0.0343 Tw
+[(recursi)25(v)15(ely e)15(xplore all of the nodes in the )]TJ
+/TT5 1 Tf
+17.0468 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0343 Tw
+(lesystem under that starting point, looking for )Tj
+/TT5 1 Tf
+18.7926 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0343 Tw
+(les which are identical to)Tj
+-36.9518 -1.1818 TD
+0 Tw
+(the )Tj
+/TT5 1 Tf
+1.4717 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+(rst )Tj
+/TT5 1 Tf
+1.25 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(le.)-500(Only inodes which are Re)15(gular Files or Symlinks should be e)15(xamined.)]TJ
+-3.834 -2.3636 TD
+0.1384 Tw
+[(W)80(e)80( will )80(de)]TJ
+/TT5 1 Tf
+4.4239 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0584 Tw
+[(ne "identical" as follo)25(ws: )-250(T)80(w)10(o)10( )]TJ
+/TT5 1 Tf
+12.8238 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0584 Tw
+[(les are identical if the)15(y)-308.4(h)0(a)20(v)20( )303.4(e)-308.4(the same number of bytes \(size\) and each)]TJ
+-18.36 -1.1818 TD
+0.0149 Tw
+[(and e)25(v)15(ery byte of one )]TJ
+/TT5 1 Tf
+8.9476 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0148 Tw
+[(le is the same as the byte at the same of)25(fset in the second )]TJ
+/TT5 1 Tf
+23.176 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0148 Tw
+[(le.)-514.8(Dif)25(ferences in metadata do not)]TJ
+-33.236 -1.1818 TD
+0 Tw
+[(impact "identical".)-500(Y)110(o)0(u)-250(d)0(o)-250(not need to consider "sparse allocation" in your determination of identical.)]TJ
+0 -2.3636 TD
+(When you )Tj
+/TT5 1 Tf
+4.3877 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(nd a "hit" you will print out \(to standard output\) the follo)25(wing:)]TJ
+-4.9438 -2.3636 TD
+0.0559 Tw
+[(*)-305.8(The pathname of the matching )]TJ
+/TT5 1 Tf
+13.5531 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0559 Tw
+[(le.)-555.9(If the starting point w)10(as gi)25(v)15(e)0(n)-305.9(a)0(s)-305.9(a)0(n)-305.9(absolute pathname, your output will also)]TJ
+-14.1093 -1.1818 TD
+0.0672 Tw
+[(be an absolute pathname, b)20(ut if the starting point w)10(as a relati)25(v)15(e)15( )-15.1(pathname, you are not being ask)10(ed to translate that)]TJ
+T*
+0.0423 Tw
+[(into an absolute pathname \(doing so can be non-deterministic and requires use of a library function that will mak)10(e)-292.3(a)]TJ
+T*
+0 Tw
+(lot of system calls\))Tj
+0 -2.3636 TD
+0.0106 Tw
+[(*)-260.6(I)0(f)-260.6(the tar)18(get )]TJ
+/TT5 1 Tf
+5.6886 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0105 Tw
+[(le has a link count >1 and you ha)20(v)15(e)15( )-15.1(encountered a hard link to the original tar)18(get, output that f)10(act. )-250(\(In)]TJ
+-6.2448 -1.1818 TD
+0.0875 Tw
+[(this case, you will also wind up outputting a "match" if your search area includes the original tar)18(get. )-250(Doní)18(t)-337.5(w)10(orry)]TJ
+T*
+0 Tw
+(about this spurious output\).)Tj
+0 -2.3636 TD
+0.0237 Tw
+(*Otherwise, if this matching )Tj
+/TT5 1 Tf
+11.7316 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0237 Tw
+[(le is a distinct inode from the tar)18(get )]TJ
+/TT5 1 Tf
+14.6122 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0236 Tw
+[(le, output the nlink v)25(alue of the matching )]TJ
+/TT5 1 Tf
+16.9105 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(le.)-523.6(If)]TJ
+-44.9229 -1.1818 TD
+0.1228 Tw
+[(nlink>1 it is possible that you will see this same matching inode multiple times during your search.)-622.8(Y)110(o)0(u)-372.8(are not)]TJ
+T*
+0.1149 Tw
+(required to distinguish between multiple matches of distinct inodes and multiple links to a matching inode that is)Tj
+T*
+0 Tw
+[(distinct from the original tar)18(get inode.)]TJ
+0 -2.3636 TD
+0.0902 Tw
+[(*)-340.2(A)-340.2(yes/no answer to the follo)25(wing question:)-590.3(could this matching )]TJ
+/TT5 1 Tf
+27.5749 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0903 Tw
+[(le be read)-590.3(by an "other" user who happens to)]TJ
+-28.131 -1.1818 TD
+0.0525 Tw
+[(kno)25(w)-302.5(the pathname of the matching )]TJ
+/TT5 1 Tf
+14.8967 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0524 Tw
+[(le?)-552.5(The in)40(v)20(oking user of your program is not necessarily an "other" \(so doní)18(t)]TJ
+-15.4528 -1.1818 TD
+0.1845 Tw
+(try to use)Tj
+/TT7 1 Tf
+4.525 0 TD
+0 Tw
+(access)Tj
+/TT2 1 Tf
+3.6006 0 TD
+0.1845 Tw
+[(\). )-250(Be)-434.5(sure to consider if the "other" user has tra)20(v)15(ersal \("x"\) permission o)15(v)15(e)0(r)-434.5(the directories)]TJ
+-8.1256 -1.1818 TD
+0 Tw
+[(in)40(v)20(olv)15(ed.)]TJ
+0 -2.3636 TD
+[(If you encounter a symlink inode, there are tw)10(o)-250(possible matching scenarios:)]TJ
+T*
+[(\(1\) The symlink resolv)15(es to the original tar)18(get )]TJ
+/TT5 1 Tf
+18.5734 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(le inode.)-500(If so, report this.)]TJ
+-19.1296 -2.3636 TD
+0.022 Tw
+[(\(2\) The symlink resolv)15(es to a distinct inode which happens to be identical in content to the tar)18(get inode.)-522(If so, report)]TJ
+0 -1.1818 TD
+0.0858 Tw
+[(this and also report the contents of the symlink.)-585.8(Y)110(o)0(u)-335.8(may or may not see the inode to which the symlink resolv)15(es)]TJ
+T*
+0 Tw
+(before or after seeing the symlink to it, depending on your search area.)Tj
+0 -2.3636 TD
+0.116 Tw
+[(Determining the "readable by other" question for symlinks is complicated and therefore you arení)18(t)-366(required to do)]TJ
+0 -1.1818 TD
+0 Tw
+(this.)Tj
+0 -2.3636 TD
+0.0192 Tw
+[(Also, remember when doing your recursion, do NO)40(T)-269.2(follo)25(w)-269.3(symlinks, otherwise you could potentially wind up in an)]TJ
+0 -1.1818 TD
+0 Tw
+(endless loop.)Tj
+/TT9 1 Tf
+0 -2.3636 TD
+[(ERR)30(ORS:)]TJ
+/TT2 1 Tf
+4.7429 0 TD
+0.0223 Tw
+[(Distinguish between critical and non-critical errors.)-522.4(E.g. if you are not able to open or stat the tar)18(get )]TJ
+/TT5 1 Tf
+40.8146 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+(le,)Tj
+-46.1136 -1.1818 TD
+0.1116 Tw
+[(this is a critical error)40(,)-361.7(since there is no meaningful w)10(ay to proceed.)-611.7(On the other hand, if you encounter an error)]TJ
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT5 6 0 R
+/TT7 7 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+12 0 obj
+<<
+/Length 5126
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 36 740 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(ECE357:Computer Operating Systems)-7100.5(PS 2/pg 2)-14923.5(©2017 Jef)25(f)-250(Hakner)]TJ
+2 -4.7273 TD
+0.0205 Tw
+[(opening a directory during your tra)20(v)15(ersal, this should not be f)10(atal. )-250.1(Y)110(ou simply will not be able to e)15(xplore that part of)]TJ
+0 -1.1818 TD
+0 Tw
+(the )Tj
+/TT5 1 Tf
+1.624 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.1523 Tw
+[(lesystem.)-652.3(Report all errors, f)10(atal or w)10(arning, with proper descripti)25(v)15(e)15( )-15.1(error messages containing the 4 basic)]TJ
+-2.1801 -1.1818 TD
+0 Tw
+[(pieces of information as discussed in Unit #1.)-500(Error reports go to standard error)40(,)-250(o)0(f)-250(course.)]TJ
+/TT9 1 Tf
+0 -2.3636 TD
+(Ef)Tj
+/TT10 1 Tf
+1 0 TD
+(ﬁ)Tj
+/TT9 1 Tf
+0.5562 0 TD
+(ciency:)Tj
+/TT2 1 Tf
+3.2794 0 TD
+0.0308 Tw
+(Do not perform unnecessary reads on a potential matching )Tj
+/TT5 1 Tf
+23.9087 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0308 Tw
+[(le.)-530.8(Think about w)10(ays to disqualify an inode)]TJ
+-29.3004 -1.1818 TD
+0.1012 Tw
+[(as being a potential match without ha)20(ving to read the contents.)-601.2(F)15(o)0(r)-351.2(this assignment, you are permitted to use an)15(y)]TJ
+T*
+0.1659 Tw
+[(system calls or stdio library functions to read the tar)18(get and prospecti)25(v)15(e)15( )-15(matching )]TJ
+/TT5 1 Tf
+34.8952 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.1659 Tw
+[(les for comparison.)-665.9(Certain)]TJ
+-35.4514 -1.1818 TD
+0 Tw
+(approaches might be more time ef)Tj
+/TT5 1 Tf
+13.6088 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+(cient than others.)Tj
+/TT9 1 Tf
+-14.1649 -2.3636 TD
+(Binary)Tj
+/TT2 1 Tf
+2.9448 0 TD
+0.1013 Tw
+[(:)-351.3(Y)110(our program must w)10(ork with an)15(y)]TJ
+/TT5 1 Tf
+15.2663 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.1013 Tw
+(le, including "binary" )Tj
+/TT5 1 Tf
+9.1739 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.1013 Tw
+[(les \(such as e)15(x)15(ecutables and media )]TJ
+/TT5 1 Tf
+14.739 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.1014 Tw
+(les\) that)Tj
+-43.7926 -1.1818 TD
+0 Tw
+[(contain non-printable characters.)-500(\(Do you understand the distinction between strncmp and memcmp, for e)15(xample?\))]TJ
+0 -2.3636 TD
+0.0655 Tw
+[(It is e)15(xpected that you will use the standard library functions)]TJ
+/TT7 1 Tf
+25.171 0 TD
+0 Tw
+(opendir)Tj
+/TT2 1 Tf
+4.2007 0 TD
+(,)Tj
+/TT7 1 Tf
+0.5655 0 TD
+(readdir)Tj
+/TT2 1 Tf
+4.5161 0 TD
+(and)Tj
+/TT7 1 Tf
+1.7593 0 TD
+(closedir)Tj
+/TT2 1 Tf
+5.1162 0 TD
+0.0655 Tw
+[(to tra)20(v)15(erse the)]TJ
+-41.3288 -1.1818 TD
+0.0038 Tw
+[(directories, and other system calls or library functions co)15(v)15(ered in Units #1 and #2 to perform the comparisons.)-503.9(If you)]TJ
+T*
+0.0225 Tw
+[(are using functions that we ha)20(v)15(ení)18(t)-272.5(c)0(o)15(v)15(ered, it is possible that you are making this too complicated.)-522.5(Y)110(o)0(u)-272.5(are allo)25(wed)]TJ
+T*
+0.0118 Tw
+(to use ordinary standard library functions such as)Tj
+/TT7 1 Tf
+20.0341 0 TD
+0 Tw
+(fprintf)Tj
+/TT2 1 Tf
+4.2007 0 TD
+(,)Tj
+/TT7 1 Tf
+0.5119 0 TD
+(strlen)Tj
+/TT2 1 Tf
+3.8625 0 TD
+0.2619 Tw
+[(etc. Y)110(ou )250(are)]TJ
+/TT9 1 Tf
+5.2841 0 TD
+0.0119 Tw
+[(not allo)10(wed)]TJ
+/TT2 1 Tf
+5.1808 0 TD
+[(to "shell out" to an)15(y)]TJ
+-39.0741 -1.1818 TD
+0 Tw
+[(e)15(xternal program.)-500(An)15(y)-250(questions on what is permissible: please ask.)]TJ
+0 -2.3636 TD
+0.0045 Tw
+(During the coding and testing of this program, you might )Tj
+/TT5 1 Tf
+23.1803 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0044 Tw
+[(nd it helpful to insert additional deb)20(ugging output, such as)]TJ
+-23.7364 -1.1818 TD
+0.1285 Tw
+[(the pathname of each inode that you are considering.)-628.5(If you do this, please mak)10(e)-378.5(sure to turn of)25(f)-378.5(the deb)20(ugging)]TJ
+T*
+0 Tw
+(output before making your )Tj
+/TT5 1 Tf
+10.9419 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+(nal submission!)Tj
+-11.498 -2.3636 TD
+0.0845 Tw
+[(Belo)25(w)-334.6(i)0(s)-334.6(some sample output.)]TJ
+/TT9 1 Tf
+12.9248 0 TD
+[(Y)111(our pr)18(ogram is not r)18(equir)18(ed to pr)18(oduce identically f)25(ormatted output!)]TJ
+/TT2 1 Tf
+31.385 0 TD
+0.0846 Tw
+(This is)Tj
+-44.3098 -1.1818 TD
+0 Tw
+[(just an e)15(xample to illustrate the results and the information that is e)15(xpected.)]TJ
+/TT7 1 Tf
+10 0 0 10 64 369 Tm
+[($)-600(./hunt testtarget)-1200(..)]TJ
+0 -1.4 TD
+(DEBUG: Target is 13432 bytes long, dev 908 ino 14819843)Tj
+T*
+(Warning: Canít open directory ../secret:Permission denied)Tj
+T*
+[(../week2/hardlink )-3600(HARD)-600(LINK TO TARGET)-3000(OK READ by OTHER)]TJ
+T*
+[(../week2/candidate1 )-2400(DUPLICATE)-600(OF TARGET \(nlink=2\))-1800(OK READ by OTHER)]TJ
+T*
+[(../week2/testtarget )-2400(HARD)-600(LINK TO TARGET)-3000(OK READ by OTHER)]TJ
+T*
+[(../week2/candidate3 )-2400(DUPLICATE)-600(OF TARGET \(nlink=2\))-1800(OK READ by OTHER)]TJ
+T*
+(DEBUG: ../week2/crazylink links to something not a file, skipping)Tj
+T*
+[(../week1/goodlink )-3600(SYMLINK)-600(RESOLVES TO TARGET)]TJ
+T*
+[(../week100/badlink1 )-2400(SYMLINK)-600(\(../week2/candidate1\) RESOLVES TO DUPLICATE)]TJ
+T*
+[(../week100/badlink2 )-2400(SYMLINK)-600(RESOLVES TO TARGET)]TJ
+T*
+[(../week100/badlink3 )-2400(HARD)-600(LINK TO TARGET)-3000(NOT READABLE by OTHER)]TJ
+ET
+endstream
+endobj
+13 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT5 6 0 R
+/TT7 7 0 R
+/TT9 8 0 R
+/TT10 14 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+16 0 obj
+<<
+/Length 5907
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 36 740 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(ECE357:Computer Operating Systems)-7100.5(PS 2/pg 3)-14923.5(©2017 Jef)25(f)-250(Hakner)]TJ
+/TT4 1 Tf
+9.8669 -4.7273 TD
+[(Pr)20(ob)10(lem 2 -- Extra Credit Filesystem corruption and reco)20(ver )]TJ
+28.3568 0 TD
+[(y--)-278(1pt)]TJ
+/TT2 1 Tf
+-36.2237 -1.7273 TD
+0.0814 Tw
+[(Attach screenshots \(or terminal session te)15(xt pastes\) as you perform the follo)25(wing system maintenance tasks.)-581.5(Note:)]TJ
+0 -1.1818 TD
+0.0696 Tw
+(you must do these as)Tj
+/TT9 1 Tf
+8.9307 0 TD
+0 Tw
+[(r)18(oot)]TJ
+/TT2 1 Tf
+2.0784 0 TD
+0.0695 Tw
+[(\(uid 0\) on a real UNIX system, not Cygwin.)-569.5(The e)15(xamples belo)25(w)-319.5(are speci)]TJ
+/TT5 1 Tf
+31.0228 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0695 Tw
+(c to Linux.)Tj
+-42.588 -1.1818 TD
+0.0438 Tw
+[(Be v)15(ery careful since an error in one of these commands could destro)10(y)-293.9(data on your hard disk!)-543.9(There are numerous)]TJ
+T*
+0 Tw
+(online resources to help you with this process.)Tj
+0 -2.3636 TD
+[(1\) Obtain a USB memory stick or USB e)15(xternal hard disk that you doní)18(t)-250(care about.)]TJ
+T*
+0.0436 Tw
+[(2\) Attach this de)25(vice to your system.)-543.6(Using the)]TJ
+/TT7 1 Tf
+19.6705 0 TD
+0 Tw
+(dmesg)Tj
+/TT2 1 Tf
+3.2941 0 TD
+0.0436 Tw
+(command you should see some system log messages which)Tj
+-22.9646 -1.1818 TD
+0 Tw
+[(re)25(v)15(eal which de)25(vice node the k)10(ernel has assigned to the dri)25(v)15(e)0(.)-500(A)-250(typical series of log messages is belo)25(w:)]TJ
+/TT7 1 Tf
+10 0 0 10 58 551 Tm
+([1309116.520803] usb 1-4: new high-speed USB device number 3 using ehci-pci)Tj
+0 -1.4 TD
+([1309116.648472] usb 1-4: New USB device found, idVendor=154b, idProduct=005b)Tj
+T*
+([1309116.648475] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3)Tj
+T*
+([1309116.648477] usb 1-4: Product: USB 2.0 FD)Tj
+T*
+([1309116.648479] usb 1-4: Manufacturer: PNY Technologies)Tj
+T*
+([1309116.648481] usb 1-4: SerialNumber: AA00000000000033)Tj
+T*
+([1309116.648836] usb-storage 1-4:1.0: USB Mass Storage device detected)Tj
+T*
+([1309116.648947] scsi10 : usb-storage 1-4:1.0)Tj
+T*
+[([1309118.001013] scsi 10:0:0:0: Direct-Access)-3000(PNY )-3000(USB)-600(2.0 FD)-4200(1100 PQ: 0 ANSI: )]TJ
+T*
+([1309118.001181] sd 10:0:0:0: Attached scsi generic sg8 type 0)Tj
+T*
+([1309118.002042] sd 10:0:0:0: [sdh] 63901440 512-byte logical blocks: \(32.7 GB/30.4 GiB\))Tj
+T*
+([1309118.002862] sd 10:0:0:0: [sdh] Write Protect is off)Tj
+T*
+([1309118.002864] sd 10:0:0:0: [sdh] Mode Sense: 43 00 00 00)Tj
+T*
+([1309118.003578] sd 10:0:0:0: [sdh] No Caching mode page found)Tj
+T*
+([1309118.003580] sd 10:0:0:0: [sdh] Assuming drive cache: write through)Tj
+T*
+0.6 Tw
+[([1309118.007737] sdh:)-600(sdh1)]TJ
+T*
+0 Tw
+([1309118.010834] sd 10:0:0:0: [sdh] Attached SCSI removable disk)Tj
+/TT2 1 Tf
+11 0 0 11 58 314 Tm
+0.2758 Tw
+[(V)111(erify that the description of the de)25(vice matches what you just inserted!)-775.8(Note that the k)10(ernel has assigned)]TJ
+/TT7 1 Tf
+0 -1.1818 TD
+0 Tw
+(/dev/sdh)Tj
+/TT2 1 Tf
+5.0508 0 TD
+[(to the o)15(v)15(erall disk, and that there is one partition)]TJ
+/TT7 1 Tf
+19.6038 0 TD
+(/dev/sdh1)Tj
+/TT2 1 Tf
+5.4009 0 TD
+(.)Tj
+-30.0555 -2.3636 TD
+0.2114 Tw
+[(3\) Mak)10(e)-461.5(a)-461.5(Linux EXT2 )]TJ
+/TT5 1 Tf
+10.6833 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.2114 Tw
+[(lesystem on the disk \(OK to use either the partition or the entire disk\).)-711.4(Mak)10(e)-461.4(sure)]TJ
+-11.2395 -1.1818 TD
+0 Tw
+[(journalling is NO)40(T)-250(enabled in this case.)-500(Sho)25(w)-250(the commands and responses.)]TJ
+0 -2.3636 TD
+0.0936 Tw
+[(4\) Mount the disk.)-593.6(Sho)25(w)-343.6(the output of the)]TJ
+/TT7 1 Tf
+18.0671 0 TD
+0 Tw
+(mount)Tj
+/TT2 1 Tf
+3.3442 0 TD
+0.0937 Tw
+[(commands \(without an)15(y)-343.7(a)0(r)18(guments\) which sho)25(ws the mounted)]TJ
+-21.4113 -1.1818 TD
+0.1347 Tw
+[(v)20(olume. )-250.1(Run)-384.8(a)-384.8(test program to generate endless disk metadata acti)25(vity)65(,)-384.7(e.g. repeatedly create, rename and delete)]TJ
+/TT5 1 Tf
+T*
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(les. )-250(If)-250(this test program produces a lot of deb)20(ugging output you doní)18(t)-250(need to include that in the screenshots.)]TJ
+-0.5562 -2.3636 TD
+0.1305 Tw
+[(5\) Disconnect the disk while it is acti)25(v)15(e)0(.)-630.5(C)0(A)55(UTION: this may hang your system for a while, and may require a)]TJ
+0 -1.1818 TD
+0 Tw
+[(reboot to reco)15(v)15(e)0(r)55(.)]TJ
+0 -2.3636 TD
+0.1792 Tw
+[(6\) Reconnect the disk.)-679.2(Run fsck to repair the )]TJ
+/TT5 1 Tf
+19.9686 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.1792 Tw
+[(lesystem \(note, you may ha)20(v)15(e)15( )-15(to)-429.2(use)]TJ
+/TT7 1 Tf
+15.9936 0 TD
+0 Tw
+(fsck.ext2)Tj
+/TT2 1 Tf
+5.83 0 TD
+(speci)Tj
+/TT5 1 Tf
+2.0547 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(cally)65(,)]TJ
+-44.9592 -1.1818 TD
+0.0775 Tw
+[(depending on your distrib)20(ution, as it may attempt to fsck the disk as a F)74(A)111(T)111( )]TJ
+/TT5 1 Tf
+31.177 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+(lesystem )Tj
+/TT5 1 Tf
+3.8271 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0776 Tw
+[(rst\).)-577.6(Y)110(o)0(u)-327.6(should see at the)]TJ
+-36.1165 -1.1818 TD
+0.2193 Tw
+[(v)15(ery least that the )]TJ
+/TT5 1 Tf
+8.1927 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.2193 Tw
+[(lesystem w)10(as "not cleanly unmounted.")-719.3(If youí)50(v)15(e)15( )-15(generated enough corruption from your)]TJ
+-8.7488 -1.1818 TD
+0.048 Tw
+[(interrupted acti)25(vity)65(,)-298(you may see other errors as well.)-548(Answer "y" to allo)25(w)-298.1(repairs to tak)10(e)-298.1(place. )-250.1(No)25(w)-298.1(mount it and)]TJ
+T*
+0.0132 Tw
+[(see if an)15(y)]TJ
+/TT5 1 Tf
+4.1061 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.0131 Tw
+[(les ha)20(v)15(e)15( )-15(appeared in)]TJ
+/TT7 1 Tf
+8.4022 0 TD
+0 Tw
+(lost+found)Tj
+/TT2 1 Tf
+6.001 0 TD
+0.0131 Tw
+[(.)-513.1(Sho)25(w)-263.1(all these commands and outputs.)-513.1(Umount the )]TJ
+/TT5 1 Tf
+21.896 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(lesystem.)-513.1(W)80(e)]TJ
+ET
+endstream
+endobj
+17 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT5 6 0 R
+/TT7 7 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 1115
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 36 740 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(ECE357:Computer Operating Systems)-7100.5(PS 2/pg 4)-14923.5(©2017 Jef)25(f)-250(Hakner)]TJ
+2 -4.7273 TD
+(are done with this )Tj
+/TT5 1 Tf
+7.3872 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+(rst test.)Tj
+-7.9434 -2.3636 TD
+0.1864 Tw
+[(7\) Mak)10(e)-436.4(a)-436.4(n)0(e)25(w)25( )-25(Linux EXT3 or EXT4 )]TJ
+/TT5 1 Tf
+16.785 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+0.1864 Tw
+[(lesystem on the disk \(o)15(v)15(erwriting the pre)25(vious )]TJ
+/TT5 1 Tf
+20.0521 0 TD
+0 Tw
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+[(lesystem\).)-686.5(Mak)10(e)-436.5(sure)]TJ
+-37.9494 -1.1818 TD
+(journalling IS enabled this time.)Tj
+0 -2.3636 TD
+(8\) Mount the )Tj
+/TT5 1 Tf
+5.4717 0 TD
+(ﬁ)Tj
+/TT2 1 Tf
+0.5562 0 TD
+-0.0001 Tc
+0.0001 Tw
+(lesystem and perform your steps 4 and 5 again.)Tj
+-6.0278 -2.3636 TD
+0 Tc
+0.0099 Tw
+[(9\) Reconnect the disk and attempt to mount it.)-509.9(V)111(erify from the logs that the journal w)10(as reco)15(v)15(ered. )-250(Sho)25(w)-259.9(\(highlight\))]TJ
+0 -1.1818 TD
+0 Tw
+[(the rele)25(v)25(ant lines of the dmesg logs relating to journal reco)15(v)15(ery)65(.)]TJ
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT5 6 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+9 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+21 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+22 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+23 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+24 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+25 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+26 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 169
+/Widths [250 333 408 500 0 0 0 0 333 333 500 0 250 333 250 278 
+500 500 500 500 500 500 500 500 500 500 278 0 0 0 564 444 
+0 722 667 667 722 611 556 0 722 333 389 722 611 889 722 722 
+556 0 667 556 611 722 722 944 722 722 0 0 0 0 0 0 
+0 444 500 444 500 444 333 500 500 278 278 500 278 778 500 500 
+500 500 333 389 278 500 500 722 500 500 444 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 333 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 760 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 21 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [278 0 0 0 0 0 0 0 0 0 0 0 0 333 0 0 
+0 556 556 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 722 0 667 611 0 0 0 0 0 0 0 0 0 
+667 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 556 611 556 611 556 0 611 611 278 0 0 278 889 611 611 
+611 0 389 556 333 611 556 0 556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 22 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 222
+/LastChar 222
+/Widths [556 ]
+/Encoding /MacRomanEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 23 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 0 0 0 600 0 0 0 600 600 0 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 0 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 0 600 600 600 600 600 
+600 600 600 600 600 600 600 600 0 600 0 600 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 0 600 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 600 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 24 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [250 333 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 333 0 0 0 0 0 
+0 0 667 0 0 667 0 0 0 0 0 0 0 0 0 778 
+0 0 722 556 0 0 0 0 0 722 0 0 0 0 0 0 
+0 500 0 444 556 444 333 500 0 278 0 0 278 833 556 500 
+556 556 444 389 333 556 0 722 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 25 0 R
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 222
+/LastChar 222
+/Widths [556 ]
+/Encoding /MacRomanEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 26 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+11 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 13 0 R
+/Contents 12 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 17 0 R
+/Contents 16 0 R
+>>
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 20 0 R
+/Contents 19 0 R
+>>
+endobj
+27 0 obj
+<<
+/S /D
+>>
+endobj
+28 0 obj
+<<
+/Nums [0 27 0 R ]
+>>
+endobj
+10 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 11 0 R 15 0 R 18 0 R]
+/Count 4
+/MediaBox [0 0 612 792]
+>>
+endobj
+29 0 obj
+<<
+/CreationDate (D:20170925110347-04'00')
+/ModDate (D:20170925110347-04'00')
+/Producer (PSNormalizer.framework)
+>>
+endobj
+30 0 obj
+<<
+/Type /Catalog
+/Pages 10 0 R
+/PageLabels 28 0 R
+>>
+endobj
+xref
+0 31
+0000000000 65535 f 
+0000023005 00000 n 
+0000000016 00000 n 
+0000006546 00000 n 
+0000020716 00000 n 
+0000021314 00000 n 
+0000021722 00000 n 
+0000021892 00000 n 
+0000022431 00000 n 
+0000019381 00000 n 
+0000023406 00000 n 
+0000023086 00000 n 
+0000006685 00000 n 
+0000011864 00000 n 
+0000022835 00000 n 
+0000023170 00000 n 
+0000012006 00000 n 
+0000017966 00000 n 
+0000023254 00000 n 
+0000018106 00000 n 
+0000019274 00000 n 
+0000019521 00000 n 
+0000019718 00000 n 
+0000019924 00000 n 
+0000020121 00000 n 
+0000020312 00000 n 
+0000020514 00000 n 
+0000023338 00000 n 
+0000023366 00000 n 
+0000023509 00000 n 
+0000023641 00000 n 
+trailer
+<<
+/Size 31
+/Root 30 0 R
+/Info 29 0 R
+/ID [<322b0a74f2468b5299b27bb36bd3a82e><322b0a74f2468b5299b27bb36bd3a82e>]
+>>
+startxref
+23711
+%%EOF

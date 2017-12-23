@@ -1,0 +1,70 @@
+ice05 Downloads/testtest » ./test.sh             
+
+
+testing P1 and echo $ ? at next line
+
+
+TestFile[testfile] size is: 8192
+Creating mapped_area[PROT_READ] with size : 8192
+testing readibility for mapped_area
+reading value from mapped_area:mapped_area[3]==A
+testing readibility for mapped_area:write a 1
+./test.sh: line 8: 22492 Segmentation fault      (core dumped) ./a.out
+139
+
+
+testing P2 and echo $ ? at next line
+
+
+TestFile[testfile] size is: 8192
+Creating mapped_area[PROT_WRITE] with size : 8192
+Update to an mmapped file with MAP_SHARED is visible to read(2).
+0
+
+
+testing P3 and echo $ ? at next line
+
+
+TestFile[testfile] size is: 8192
+Creating mapped_area[PROT_WRITE] with size : 8192
+Update to an mmapped file with MAP_PRIVATE is not visible to read(2).
+1
+
+
+testing P4 and echo $ ? at next line
+
+
+Page size is: 4096
+TestFile[something_in_the_middle] size is: 8195
+Creating mapped_area[PROT_WRITE | PROT_READ] with size : 8195
+TestFile[something_in_the_middle] size is: 8195
+When a write is made one byte beyond the size of an mmapped file, for a file with a size that is not a multiple of of the page size, its size as reported by stat(2) does not change.
+1
+
+
+testing P5 and echo $ ? at next line
+
+
+Page size is: 4096
+TestFile[something_in_the_middle] size is: 8195
+Creating mapped_area[PROT_WRITE | PROT_READ] with size : 8196
+Writing 'X' to offset: 8195
+Writing 'f' with write command to offset: 8211
+lseeking back to end of the file at offset:8195
+Reading 1 byte from the file[something_in_the_middle] with offset[8195]
+TestFile[something_in_the_middle] size is: 8212
+read system call return=0
+If we create a "hole" in a file, any changes previously made in an mmapped region beyond the end of the file will not be visible.
+1
+
+
+testing P6
+
+
+Page size is: 4096
+TestFile[smallfile] size is: 50
+Creating mapped_area[PROT_WRITE | PROT_READ] with size : 8192
+Successfully read one byte past within one page size testfile[smallfile]with value 0
+./test.sh: line 52: 22502 Segmentation fault      (core dumped) ./f.out
+139
+
